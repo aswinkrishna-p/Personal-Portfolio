@@ -51,7 +51,9 @@ function Navbar() {
 
       {/* Connect Button */}
       <div className="hidden md:block py-4 px-4 rounded-full bg-gradient-to-br from-pink-300 to-purple-500 text-lg cursor-pointer transition-transform duration-500 hover:scale-105">
-        Connect With Me
+          <AnchorLink offset={50} href="#contact">
+            Contact With Me
+          </AnchorLink>
       </div>
     </div>
   );

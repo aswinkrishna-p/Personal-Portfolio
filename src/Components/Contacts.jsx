@@ -2,6 +2,8 @@ import React from 'react';
 import { MdEmail } from "react-icons/md";
 import { PiPhoneCallFill } from "react-icons/pi";
 import { FaLocationDot } from "react-icons/fa6";
+import { motion } from "motion/react"
+
 
 function Contacts(props) {
     const onSubmit = async (event) => {
@@ -32,13 +34,21 @@ function Contacts(props) {
     return (
         <div id='contact' className="flex flex-col items-center justify-center mt-10 mb-10 ">
             <div className="pb-4 mb-5">
-                <h1 className="my-8 text-4xl">Get in touch</h1>
+                <motion.h1
+            whileInView={{opacity:1 ,y:0}}
+            initial={{opacity:0 ,y:-100}}
+            transition={{duration:1.5}}
+                className="my-8 text-4xl">Get in touch</motion.h1>
             </div>
 
             {/* Flexbox container for left and right sections */}
             <div className="flex flex-col md:flex-row justify-between items-start gap-8 w-full max-w-6xl">
                 {/* Left Section */}
-                <div className=" flex-1">
+                <motion.div 
+                             whileInView={{opacity:1 ,x:0}}
+                             initial={{x:-100 ,opacity:0}}
+                             transition={{duration:1.5}} 
+                className=" flex-1">
                     <h1 className="font-bold mb-4 bg-gradient-to-r from-pink-300 to-purple-500 bg-clip-text text-5xl text-transparent">Let's talk</h1>
                     <p className="mb-6 max-w-lg text-lg tracking-tight">
                         I'm currently available to take on new projects, so feel free to send me a message about anything that you want me to work on. You can contact me anytime.
@@ -46,7 +56,7 @@ function Contacts(props) {
                     <div className="space-y-4">
                         <div className="flex items-center gap-4">
                             <MdEmail className="text-xl text-gray-700" />
-                            <p>aswinkrishna@33715@gmail.com</p>
+                            <p>aswinkrishna33715@gmail.com</p>
                         </div>
                         <div className="flex items-center gap-4">
                             <PiPhoneCallFill className="text-xl text-gray-700" />
@@ -57,10 +67,14 @@ function Contacts(props) {
                             <p>India, Kerala, Calicut</p>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
                 {/* Right Section (Form) */}
-                <form onSubmit={onSubmit} className=" flex-1 flex flex-col gap-4">
+                <motion.form 
+                 whileInView={{opacity:1 ,x:0}}
+                 initial={{opacity:0 ,x:100}}
+                 transition={{duration:1.5}}
+                onSubmit={onSubmit} className=" flex-1 flex flex-col gap-4">
                     <label htmlFor="name" className="font-medium">Your Name</label>
                     <input
                         type="text"
@@ -88,7 +102,7 @@ function Contacts(props) {
                     >
                         Submit now
                     </button>
-                </form>
+                </motion.form>
             </div>
         </div>
     );
