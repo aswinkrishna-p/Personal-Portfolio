@@ -1,6 +1,6 @@
 import React from 'react';
 import { HERO_CONTENT } from '../utils/Data';
-import profilepic from '../assets/KevinRushProfile.png'
+import profilepic from '../assets/Hero_section-2.jpg'
 import { TbBrandLeetcode } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -26,9 +26,9 @@ function Hero(props) {
                 variants={container(0)}
                 initial="hidden"
                 animate="visible"
-                className="pb-16 text-6xl font-light lg:mt-16 lg:text-6xl"
+                className="pb-16 text-5xl font-light lg:mt-16 lg:text-6xl"
               >
-                I'M Aswin krishna{" "}
+                I'M Aswin krishna
               </motion.h1>
               <motion.span
                 variants={container(0.5)}
@@ -87,6 +87,7 @@ function Hero(props) {
                 transition={{ duration: 1, delay: 1 }}
                 src={profilepic}
                 alt=""
+                className='h-[29rem] rounded-2xl w-[32rem]'
               />
             </div>
           </div>
