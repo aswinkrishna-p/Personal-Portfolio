@@ -8,7 +8,7 @@ import stepinstyle from '../assets/step-in-style.png'
 import paintcont from '../assets/paint-cont.png'
 import chatapp from '../assets/chat-app.png'
 import netflix from '../assets/netflix.png'
-import olx from '../assets/olx.png'
+import olx from '../assets/Olx.png'
 import swiggy from '../assets/swiggy.png'
 
 const mywork_data = [
