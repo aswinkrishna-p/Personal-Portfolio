@@ -18,9 +18,11 @@ function MyWorks() {
        transition={{duration:1.5}} 
       className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {mywork_data.map((data, index) => (
+          <a href= {data.w_link} target="_blank" rel="noopener noreferrer">
           <div key={index} className="bg-white p-3 rounded-lg cursor-pointer hover:scale-105 transition-transform ">
             <img src={data.w_img} alt='' className="w-72 h-48 object-fill rounded-lg" />
           </div>
+          </a>
         ))}
       </motion.div>
     </div>

@@ -70,7 +70,7 @@ function Hero(props) {
                   <TbBrandLeetcode />
                 </a>
                 <a
-                  href="https://leetcode.com/u/ASWIN_KRISHNA_/"
+                  href="https://www.instagram.com/aswin.dev_/profilecard/?igsh=bWhraGJyYm5wNWFy"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
