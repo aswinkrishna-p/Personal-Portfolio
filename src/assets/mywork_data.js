@@ -3,7 +3,7 @@ import paintcont from '../assets/paint-cont.png'
 import chatapp from '../assets/chat-app.png'
 import netflix from '../assets/netflix.png'
 import olx from '../assets/Olx.png'
-import userManagement from '../assets/user-management.png'
+import usermanagement from '../assets/user-management.png'
 
 const mywork_data = [
     {
@@ -39,7 +39,7 @@ const mywork_data = [
     {
         w_no:6,
         w_name:"Web design",
-        w_img:userManagement,
+        w_img:usermanagement,
         w_link:'https://github.com/aswinkrishna-p/mern-auth'
     },
 ]
